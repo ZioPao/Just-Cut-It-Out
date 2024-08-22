@@ -7,11 +7,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Fetch .luacheckrc 
-        uses: foxtrotperry/fetch-file-action@v0
+        uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9
         with:
           url: 'https://raw.githubusercontent.com/ZioPao/PaosZomboidCrap/main/.luacheckrc'
-          path: '${{ github.workspace }}/.luacheck.rc'
-          filename: 'custom_filename.txt'
+          target: '${{ github.workspace }}'
       - name: Luacheck linter
         uses: lunarmodules/luacheck@v1
         with:
