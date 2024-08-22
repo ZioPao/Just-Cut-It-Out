@@ -11,4 +11,4 @@ jobs:
       - name: Luacheck linter
         uses: lunarmodules/luacheck@v1
         with:
-            args: media --config ${{ github.workspace }}/.luacheckrc
+            args: media --config .luacheckrc
