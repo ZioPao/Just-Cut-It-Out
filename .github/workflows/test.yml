@@ -6,7 +6,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Fetch .luacheckrc 
+        uses: foxtrotperry/fetch-file-action@v0
+        with:
+          url: 'https://raw.githubusercontent.com/ZioPao/PaosZomboidCrap/main/.luacheckrc'
+          path: '${{ github.workspace }}/.luacheck.rc'
+          filename: 'custom_filename.txt'
       - name: Luacheck linter
         uses: lunarmodules/luacheck@v1
         with:
-            args: media --config https://raw.githubusercontent.com/ZioPao/PaosZomboidCrap/main/.luacheckrc
+            args: media --config ${{ github.workspace }}/.luacheck.rc
