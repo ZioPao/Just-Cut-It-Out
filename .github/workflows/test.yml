@@ -9,4 +9,4 @@ jobs:
       - name: Luacheck linter
         uses: lunarmodules/luacheck@v1
         with:
-            args: --config https://raw.githubusercontent.com/ZioPao/PaosZomboidCrap/main/.luacheckrc
+            args: media --config https://raw.githubusercontent.com/ZioPao/PaosZomboidCrap/main/.luacheckrc
