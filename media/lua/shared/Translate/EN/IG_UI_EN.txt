@@ -16,5 +16,7 @@ IG_UI_EN = {
     IGUI_HealthPanel_ProstEquipped = "Prosthesis Equipped",
 
     IGUI_Confirmation_Amputate = " <CENTRE> Do you really want to amputate that limb?"
+	IGUI_No = "No",
+	IGUI_Yes = "Yes",
 
 }

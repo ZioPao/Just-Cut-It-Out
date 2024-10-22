@@ -50,27 +50,30 @@ function ConfirmationPanel:createChildren()
     local btnWidth = 100
     local btnHeight = 25
 
-
     local yButton = self:getHeight() - yPadding - btnHeight
 
-    self.btnYes = ISButton:new(xPadding, yButton, btnWidth, btnHeight, "Yes", self, self.onClick)
+    -- Yes button with translator
+    self.btnYes = ISButton:new(xPadding, yButton, btnWidth, btnHeight, getText("IGUI_Yes"), self, self.onClick)
     self.btnYes.internal = "YES"
     self.btnYes:initialise()
-    self.btnYes.borderColor = { r = 1, g = 0, b = 0, a = 1 }
+    self.btnYes.borderColor = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
     self.btnYes:setEnable(true)
     self:addChild(self.btnYes)
 
-    self.btnNo = ISButton:new(self:getWidth() - xPadding - btnWidth, yButton, btnWidth, btnHeight, "No", self,
-        self.onClick)
+    -- No button with translator
+    self.btnNo = ISButton:new(self:getWidth() - xPadding - btnWidth, yButton, btnWidth, btnHeight, getText("IGUI_No"), self, self.onClick)
     self.btnNo.internal = "NO"
     self.btnNo:initialise()
+    self.btnNo.borderColor = { r = 0.5, g = 0.5, b = 0.5, a = 1 }
     self.btnNo:setEnable(true)
     self:addChild(self.btnNo)
 end
 
 function ConfirmationPanel:onClick(btn)
     if btn.internal == 'YES' then
-        self.onConfirmFunc(self.parentPanel)
+        if self.onConfirmFunc then
+            self.onConfirmFunc(self.parentPanel)
+        end
         self:close()
     elseif btn.internal == 'NO' then
         self:close()
@@ -89,16 +92,15 @@ function ConfirmationPanel.Open(alertText, x, y, parentPanel, onConfirmFunc)
     local width = 500
     local height = 120
 
-
     local screenWidth = getCore():getScreenWidth()
     local screenHeight = getCore():getScreenHeight()
 
-    -- Check for oversize
-    if x+width > screenWidth then
+    -- Check size to avoid exceeding screen limits
+    if x + width > screenWidth then
         x = screenWidth - width
     end
 
-    if y+height > screenHeight then
+    if y + height > screenHeight then
         y = screenHeight - height
     end
 
@@ -110,7 +112,10 @@ function ConfirmationPanel.Open(alertText, x, y, parentPanel, onConfirmFunc)
 end
 
 function ConfirmationPanel.Close()
-    ConfirmationPanel.instance:close()
+    if ConfirmationPanel.instance then
+        ConfirmationPanel.instance:close()
+        ConfirmationPanel.instance = nil
+    end
 end
 
 return ConfirmationPanel

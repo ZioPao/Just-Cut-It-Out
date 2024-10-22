@@ -14,5 +14,9 @@ IG_UI_FR = {
     IGUI_HealthPanel_Cauterized = "Cautérisé",
     IGUI_HealthPanel_WoundDirtyness = "Saleté de la plaie",
     IGUI_HealthPanel_ProstEquipped = "Prothèse équipée",
-
+	
+	IGUI_Confirmation_Amputate = " <CENTRE> Voulez-vous vraiment amputer ce membre ?",
+	IGUI_No = "Non",
+	IGUI_Yes = "Oui",
+	
 }
