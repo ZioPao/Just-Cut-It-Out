@@ -1,0 +1,31 @@
+ContextMenu_TR = {
+    ContextMenu_Amputate = "Ampute Et",
+    ContextMenu_Amputate_Bandage = "Ampute Et ve Bandajla",
+    ContextMenu_Amputate_Stitch = "Ampute Et ve Dikiþ At",
+    ContextMenu_Amputate_Stitch_Bandage = "Ampute Et, Dikiþ At ve Bandajla",
+
+    ContextMenu_Cauterize = "Daðla",
+    
+    ContextMenu_Limb_Hand_L = "Sol El",
+    ContextMenu_Limb_ForeArm_L = "Sol Ön Kol",
+    ContextMenu_Limb_UpperArm_L = "Sol Üst Kol",
+    ContextMenu_Limb_Hand_R = "Sað El",
+    ContextMenu_Limb_ForeArm_R = "Sað Ön Kol",
+    ContextMenu_Limb_UpperArm_R = "Sað Üst Kol",
+
+    ContextMenu_InstallProstRight = "Sað kola protez tak",
+    ContextMenu_InstallProstLeft = "Sol kola protez tak",
+
+    ContextMenu_PutTourniquetArmLeft = "Sol kola turnike tak",
+    ContextMenu_PutTourniquetLegL = "Sol bacaðýna turnike tak",
+    ContextMenu_PutTourniquetArmRight = "Sað kola turnike tak",
+    ContextMenu_PutTourniquetLegR = "Sað bacaðýna turnike tak",
+
+
+    ContextMenu_CleanWound = "Yarayý Temizle",
+
+
+    ContextMenu_Admin_TOC = "TOC",
+    ContextMenu_Admin_ResetTOC = "Amputasyonlarý Sýfýrla",
+    ContextMenu_Admin_ForceAmputation = "Zorla Amputasyon Yap",
+}

@@ -1,0 +1,11 @@
+ItemName_TR = {
+
+    ItemName_TOC.Surg_Arm_Tourniquet_L = "Turnike",
+    ItemName_TOC.Surg_Arm_Tourniquet_R = "Turnike",
+
+    ItemName_TOC.Prost_NormalArm_L = "Protez Kol",
+    ItemName_TOC.Prost_NormalArm_R = "Protez Kol",
+
+    ItemName_TOC.Prost_HookArm_L = "Protez Kol - Kanca",
+    ItemName_TOC.Prost_HookArm_R = "Protez Kol - Kanca",
+}

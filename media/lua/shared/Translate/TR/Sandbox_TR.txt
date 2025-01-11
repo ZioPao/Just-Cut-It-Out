@@ -1,0 +1,9 @@
+Sandbox_TR = {
+    Sandbox_TOC = "The Only Cure",
+    Sandbox_TOC_CicatrizationSpeed = "Yara Ýyileþme Hýzý",
+    Sandbox_TOC_WoundDirtynessMultiplier = "Yara Kirlilik Çarpaný",
+    Sandbox_TOC_SurgeonAbilityImportance = "Cerrahýn Yetenek Önemi",
+    Sandbox_TOC_EnableZombieAmputations = "Zombi Amputasyonlarýný Etkinleþtir",
+    Sandbox_TOC_ZombieAmputationDamageThreshold = "Zombi Amputasyon Hasar Eþiði",
+    Sandbox_TOC_ZombieAmputationDamageChance = "Zombi Amputasyon Hasar Þansý",
+}

@@ -1,0 +1,15 @@
+UI_TR = {
+    UI_trait_Amputee_Hand = "Ampute Sol El",
+    UI_trait_Amputee_Hand_desc = "",
+
+    UI_trait_Amputee_ForeArm = "Ampute Sol �n Kol",
+    UI_trait_Amputee_ForeArm_desc = "",
+
+    UI_trait_Amputee_UpperArm = "Ampute Sol �st Kol",
+    UI_trait_Amputee_UpperArm_desc = "",
+
+    UI_trait_Insensitive = "Hissiz",
+    UI_trait_Insensitive_desc = "",
+
+    UI_Say_CantEquip = "Bunu bu �ekilde ku�anamam...",
+}

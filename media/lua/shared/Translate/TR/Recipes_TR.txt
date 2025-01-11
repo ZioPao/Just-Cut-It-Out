@@ -1,0 +1,4 @@
+Recipes_TR = {
+    Recipe_Craft_Prosthetic_Arm = "Protez Kol Yap",
+    Recipe_Craft_Prosthetic_Hook = "Protez Kanca Yap",
+}
